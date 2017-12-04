@@ -8,8 +8,8 @@ const RsaKeySize = 2048
 const AcmeRegistration = "acme-registration.json"
 const AcmeRegistrationUrl = "acme-registration-url"
 const AcmePrivateKey = k8sApi.TLSPrivateKeyKey
-const AcmeHttpChallengePath = "/.well-known/acme-challenge"
-const AcmeHttpSelfTest = "/.well-known/acme-challenge/_selftest"
+const AcmeHttpChallengePath = ":30000/.well-known/acme-challenge"
+const AcmeHttpSelfTest = ":30000/.well-known/acme-challenge/_selftest"
 
 const TLSCertKey = k8sApi.TLSCertKey
 const TLSPrivateKeyKey = k8sApi.TLSPrivateKeyKey
